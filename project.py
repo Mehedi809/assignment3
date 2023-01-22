@@ -1,7 +1,7 @@
 #my project is image download in online site
 import requests
 class img_download:
-    def Dnload_pro(a):
+    def Dnload_pro(self, a):
         try:
             First_inp = int(input("Enter a total image: "))   #Total image user input
             url_dict = {}  # This is empty dictionary
@@ -22,10 +22,11 @@ class img_download:
             print("Sorry!, The program did not work. Please use the program properly.")
 
 
-ImgDownload = img_download()
+
 func_inp = input("This program will not download images from any paid online site, is the program really useful for you? If yes then write 'Yes' and if not then write 'No'.: ")
+ImgDownload = img_download()
 if func_inp=="Yes":
-    img_download.Dnload_pro(func_inp)   #call function
+    ImgDownload.Dnload_pro(func_inp)   #call function
 else:
     print("Then this code will not be of any use to you, thanks.")
 
